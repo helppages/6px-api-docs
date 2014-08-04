@@ -44,7 +44,7 @@ $ curl https://api.6px.io/v1/users/:user_id/jobs?key=YOUR_KEY&secret=YOUR_SECRET
 | `200`   | OK                    | Everything worked as expected                                                      |
 | `400`   | Bad Request           | Often missing a required parameter                                                 |
 | `401`   | Unauthorized          | Invalid API key or secret, or the domain is not allowed                            |
-| `404`   | Not Found             | The requested resource doesn’t exist                                               |
+| `404`   | Not Found             | The requested resource doesn't exist                                               |
 | `429`   | Too Many Requests     | You are sending too many requests too quickly or you have met your plans API quota |
 | `500`   | Internal Server Error | Something went wrong on our end                                                    |
 

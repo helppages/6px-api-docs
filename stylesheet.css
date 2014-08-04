@@ -132,6 +132,10 @@ form#search input#search-bar {
 
 }
 
+.page a {
+  color: #176675;
+}
+
 /* The link that appears next to titles for in-page navigation */
 .page .anchor-link {
 
