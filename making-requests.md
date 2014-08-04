@@ -5,11 +5,13 @@
 #### `POST` /users/:user_id/jobs
 
 **Example Request:**
+
 ```bash
 $ curl -X POST -H "Content-Type: application/json" -d '{"output":[{"methods":[{"method": "resize","options":{"width":200,"height":200}}],"type":"image/png","ref":["main"]}],"input":{"hobbit":"http://0.tqn.com/d/scifi/1/0/n/1/1/-/HBT-008104r.jpg"}}' https://api.6px.io/v1/users/:user_id/jobs
 ```
 
 **Example Response:**
+
 ```json
 {
     "id": "52e1f64007438cb08073d5e8"
@@ -21,11 +23,13 @@ $ curl -X POST -H "Content-Type: application/json" -d '{"output":[{"methods":[{"
 #### `GET` /users/:user_id/jobs/:job_id
 
 **Example Request:**
+
 ```bash
 $ curl https://api.6px.io/v1/users/52c747dc04f452f766000001/jobs/52e1f64007438cb08073d5e8
 ```
 
 **Example Response:**
+
 ```json
 {
   "__v": 0,
@@ -91,11 +95,13 @@ $ curl https://api.6px.io/v1/users/52c747dc04f452f766000001/jobs/52e1f64007438cb
 #### `GET` /users/:user_id/jobs
 
 **Example Request:**
+
 ```bash
 $ curl https://api.6px.io/v1/users/52c747dc04f452f766000001/jobs
 ```
 
 **Example Response:**
+
 ```json
 [
   {
@@ -277,6 +283,7 @@ $ curl https://api.6px.io/v1/users/52c747dc04f452f766000001/jobs
 An `object` that allows you to store custom data such as a database id, name or email.
 
 **Example Store:**
+
 ```json
 {
   "data": {
@@ -287,6 +294,7 @@ An `object` that allows you to store custom data such as a database id, name or 
 ```
 
 You can then easily locate jobs using with a simple [search](#search):
+
 ```bash
 $ curl https://api.6px.io/v1/users/:user_id/jobs?data.id=1234
 ```
@@ -307,6 +315,7 @@ The `input` array specifies the images that are to be used when processing the j
 Specifies operations that are to be run against the images in the `input` array. Multiple outputs can be achieved by providing additional objects.
 
 **Example:**
+
 ```json
 {
   "output": [
@@ -351,6 +360,7 @@ Specifies operations that are to be run against the images in the `input` array.
 Specifies what [methods](#methods) to run against that particular output.
 
 **Example:**
+
 ```json
 {
   "methods": [
@@ -387,6 +397,7 @@ A `string` that allows you to name an output so that you can reference a specifi
 Specifies which input(s) to use. If we specify more than one ref in this block, it will duplicate whatever is in this block for each of the input indexes defined. If the value is set to false, a random filename will be generated.
 
 **For example, if we have the following input object containing 4 inputs:**
+
 ```json
 {
   "input": {
@@ -399,6 +410,7 @@ Specifies which input(s) to use. If we specify more than one ref in this block, 
 ```
 
 **We could then specify that we want to use the 3rd input image like so:**
+
 ```json
 {
   "output": [

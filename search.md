@@ -1,4 +1,6 @@
-# SEARCH `experimental`
+# SEARCH
+
+`experimental`
 
 The search functionality is optimized to help you find jobs using query parameters.
 
@@ -19,6 +21,7 @@ The search functionality is optimized to help you find jobs using query paramete
 * `?number={mod}10,2` Where (number / 10) has remainder 2
 
 **Example:**
+
 ```bash
 $ curl https://api.6px.io/v1/users/:user_id/jobs?processed.bytes={gt}1048576
 ```
@@ -32,6 +35,7 @@ $ curl https://api.6px.io/v1/users/:user_id/jobs?processed.bytes={gt}1048576
 * `?string={exact}fOoBaR` Case-sensitive exact match of fOoBaR
 
 **Example:**
+
 ```bash
 $ curl https://api.6px.io/v1/users/:user_id/jobs?status=processing
 ```
@@ -42,6 +46,7 @@ $ curl https://api.6px.io/v1/users/:user_id/jobs?status=processing
 * `?latlon={near}40.0176,-105.2797` Near 40.0176,-105.2797 (no radius limit, automatically sorts by distance)
 
 **Example:**
+
 ```bash
 $ curl https://api.6px.io/v1/users/:user_id/jobs?processed.images.latlon={near}40.0176,-105.2797,10
 ```
@@ -55,6 +60,7 @@ $ curl https://api.6px.io/v1/users/:user_id/jobs?processed.images.latlon={near}4
 - `date={gt}1999-12-12T13:33:00.000Z{lt}2014-01-01T01:01:01.000Z` between 1999-12-12T13:33:00.000Z and 2014-01-01T01:01:01.000Z
 
 **Example:**
+
 ```bash
 $ curl https://api.6px.io/v1/users/:user_id/jobs?created={gte}1999-12-12T13:33:00.000Z
 ```

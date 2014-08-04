@@ -1,4 +1,4 @@
-# OVERVIEW
+	# OVERVIEW
 
 The 6px API is built on HTTP. Our API is [RESTful](http://en.wikipedia.org/wiki/Representational_State_Transfer) and it:
 
@@ -69,16 +69,19 @@ $ curl https://api.6px.io/v1/users/:user_id/jobs?page=2&per_page=100
 ## SORTING
 
 **Sort by value:**
+
 ```bash
 $ curl https://api.6px.io/v1/users/:user_id/jobs?sort_by=created
 ```
 
 **Sort by value (descending):**
+
 ```bash
 $ curl https://api.6px.io/v1/users/:user_id/jobs?sort_by=created,desc
 ```
 
 **Sort by value (ascending):**
+
 ```bash
 $ curl https://api.6px.io/v1/users/:user_id/jobs?sort_by=created,asc
 ```

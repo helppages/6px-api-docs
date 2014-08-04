@@ -8,6 +8,7 @@
 | `background` | String  | False    | The background color to fill.  Any hex or `transparent` works.     |
 
 **Example:**
+
 ```json
 {
   "method": "rotate",
@@ -27,6 +28,7 @@
 | `width`   | Number  | False    | -                                                                    |
 
 **Example 1:**
+
 ```json
 {
   "method": "resize",
@@ -38,6 +40,7 @@
 ```
 
 **Example 2:**
+
 ```json
 {
   "method": "resize",
@@ -61,6 +64,7 @@
 | `padding` | Number  | False    | Sets specified padding when using `face` parameter.                            |
 
 **Example 1:**
+
 ```json
 {
   "method": "crop",
@@ -74,6 +78,7 @@
 ```
 
 **Example 2:**
+
 ```json
 {
   "method": "crop",
@@ -85,6 +90,7 @@
 ```
 
 **Example 3:**
+
 ```json
 {
   "method": "crop",
@@ -119,6 +125,7 @@
 Undocumented: `curves`
 
 **Example 1:**
+
 ```json
 {
   "method": "filter",
@@ -129,6 +136,7 @@ Undocumented: `curves`
 ```
 
 **Example 2:**
+
 ```json
 {
   "method": "filter",
@@ -140,6 +148,7 @@ Undocumented: `curves`
 ```
 
 **Example 3:**
+
 ```json
 {
   "method": "filter",
@@ -162,6 +171,7 @@ Undocumented: `curves`
 
 
 **Example 1:**
+
 ```json
 {
   "method": "layer",
@@ -175,6 +185,7 @@ Undocumented: `curves`
 ```
 
 **Example 2:**
+
 ```json
 {
   "method": "layer",
@@ -196,6 +207,7 @@ Undocumented: `curves`
 | `nudity`       | False    | This is an experimental analysis feature. It's accuracy is approximately 60%.      																		 |
 
 **Example 1:**
+
 ```json
 {
   "method": "analyze",
@@ -206,6 +218,7 @@ Undocumented: `curves`
 ```
 
 **Example 2:**
+
 ```json
 {
   "method": "analyze",
@@ -216,6 +229,7 @@ Undocumented: `curves`
 }
 ```
 **Example 3:**
+
 ```json
 {
   "method": "analyze",
