@@ -1,4 +1,4 @@
-	# OVERVIEW
+# OVERVIEW
 
 The 6px API is built on HTTP. Our API is [RESTful](http://en.wikipedia.org/wiki/Representational_State_Transfer) and it:
 
